@@ -12,7 +12,7 @@
 			// ],
 			"type": "shell",
 			"presentation": {
-				"focus": false,
+				"focus": true,
 				"echo": false,
 				"showReuseMessage": false
 			},
