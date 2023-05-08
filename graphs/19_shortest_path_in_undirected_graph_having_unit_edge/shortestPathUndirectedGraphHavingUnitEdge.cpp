@@ -1,3 +1,4 @@
+// https://practice.geeksforgeeks.org/problems/shortest-path-in-undirected-graph-having-unit-distance/1
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -6,10 +7,27 @@ void print(v(int)&);
 void graphInput (vector<vector<int>> &, int );
 
 vector<int> shortestPath(vector<vector<int>>& edges, int N,int M, int src){
-    for(auto it : edges){
-        cout<< it[0] <<" "<<it[1]<<endl;
+    
+    vector<int> adj[N], dist(N, -1);
+    for(int i = 0; i<M; i++){
+        int u = edges[i][0], v = edges[i][1];
+        adj[u].push_back(v);
+        adj[v].push_back(u);
     }
-    return vector<int>(N, 0);
+    queue<int> q;
+    q.push(src);
+    dist[src] = 0;
+    while(!q.empty()){
+        int node = q.front();
+        q.pop();
+        for(int i: adj[node]){
+            if(dist[i]==-1){
+                dist[i] = dist[node] + 1;
+                q.push(i);
+            }
+        }
+    }
+    return dist;
 }
 
 int main() {

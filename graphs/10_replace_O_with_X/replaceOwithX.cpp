@@ -57,7 +57,9 @@ vector<vector<char>> fill(int m, int n, vector<vector<char>> mat)
 }
 
 int main() {
-    freopen("/home/ritapravo/Documents/coding/graphs/10_replace_O_with_X/input.txt", "r", stdin);
+    string filePath(__FILE__);
+    string inputPath = filePath.substr(0, filePath.find_last_of("//"))+"/input.txt";
+    freopen(inputPath.c_str(), "r", stdin);
     int tc;
     cin>>tc;
     while(tc--){

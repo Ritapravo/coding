@@ -39,7 +39,9 @@ int orangesRotting(vector<vector<int>>& grid) {
 }
 
 int main() {
-    freopen("/home/ritapravo/Documents/coding/graphs/07_rotten_orages/input.txt", "r", stdin);
+    string filePath(__FILE__);
+    string inputPath = filePath.substr(0, filePath.find_last_of("//"))+"/input.txt";
+    freopen(inputPath.c_str(), "r", stdin);
     int tc; cin >>tc;
     while(tc--){
         int n, m;

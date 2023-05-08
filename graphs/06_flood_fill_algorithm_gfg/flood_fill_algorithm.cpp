@@ -23,7 +23,9 @@ vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int ne
 }
 
 int main(){
-    freopen("/home/ritapravo/Documents/coding/graphs/06_flood_fill_algorithm_gfg/input.txt", "r", stdin);
+	string filePath(__FILE__);
+	string inputPath = filePath.substr(0, filePath.find_last_of("//"))+"/input.txt";
+	freopen(inputPath.c_str(), "r", stdin);
 	int tc;
 	cin >> tc;
 	while(tc--){

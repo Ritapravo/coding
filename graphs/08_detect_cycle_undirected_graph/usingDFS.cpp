@@ -33,7 +33,9 @@ bool isCycle(int V, vector<int> adj[]) {
 }
 
 int main() {
-    freopen("/home/ritapravo/Documents/coding/graphs/08_detect_cycle_undirected_graph/input.txt", "r", stdin);
+    string filePath(__FILE__);
+    string inputPath = filePath.substr(0, filePath.find_last_of("//"))+"/input.txt";
+    freopen(inputPath.c_str(), "r", stdin);
     int tc;
     cin>>tc;
     while(tc--){

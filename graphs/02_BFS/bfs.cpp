@@ -26,7 +26,9 @@ vector<int> bfs (vector<int> adj[], int n, int start){
 }
 
 int main() {
-    freopen("input.txt", "r", stdin);
+    string filePath(__FILE__);
+    string inputPath = filePath.substr(0, filePath.find_last_of("//"))+"/input.txt";
+    freopen(inputPath.c_str(), "r", stdin);
     int n, m;
     cin >> n >> m;
     vector<int> adj[n+1];

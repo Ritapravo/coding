@@ -15,7 +15,9 @@ void print(v(int)&arr){
 
 
 signed main(){
-    freopen("input2.txt", "r", stdin);
+    string filePath(__FILE__);
+    string inputPath = filePath.substr(0, filePath.find_last_of("//"))+"/input2.txt";
+    freopen(inputPath.c_str(), "r", stdin);
     // freopen("output.txt", "w", stdout);
     int n,m;
     cin >> n >> m;

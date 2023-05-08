@@ -32,7 +32,9 @@ int numProvinces(vector<vector<int>> adj, int V) {
 }
 
 int main() {
-    freopen("/home/ritapravo/Documents/coding/graphs/04_number_of_provinces_gfg/input.txt", "r", stdin);
+    string filePath(__FILE__);
+    string inputPath = filePath.substr(0, filePath.find_last_of("//"))+"/input.txt";
+    freopen(inputPath.c_str(), "r", stdin);
     int n;
     cin >> n;
     vector<vector<int>> adj(n, vector<int>(n));

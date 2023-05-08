@@ -34,7 +34,9 @@ int numIslands(vector<vector<char>>& grid) {
 }
 
 int main() {
-    freopen("/home/ritapravo/Documents/coding/graphs/05_number_of_islands_gfg/input.txt", "r", stdin);
+    string filePath(__FILE__);
+    string inputPath = filePath.substr(0, filePath.find_last_of("//"))+"/input.txt";
+    freopen(inputPath.c_str(), "r", stdin);
     int n, m;
     cin >> m >> n;
     vector<vector<char>> grid(m, vector<char>(n, '#'));
