@@ -62,3 +62,6 @@ int main(){
     }
     return 0;
 }
+
+//g++ shortestPathInDAG.cpp && ./a.out && rm ./a.out
+//g++ ~/Documents/coding/graphs/18_Shortest_path_in_DAG/shortestPathInDAG.cpp && ./a.out && rm ./a.out
