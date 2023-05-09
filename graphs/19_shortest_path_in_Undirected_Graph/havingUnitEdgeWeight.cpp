@@ -59,6 +59,5 @@ void graphInput (vector<vector<int>> &edges, int m){
     }
 }
 
-//g++ shortestPathDirectedGraphHavingUnitEdge.cpp && ./a.out && rm ./a.out
-//g++ ~/Documents/coding/graphs/19_shortest_path_in_undirected_graph_having_unit_edge/shortestPathDirectedGraphHavingUnitEdge.cpp && ./a.out && rm ./a.out
+
 
