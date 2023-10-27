@@ -77,3 +77,11 @@ int main(){
         code();
     return 0;
 }
+
+// ans = 2
+// ans = 1
+// ans = 2
+// ans = 5
+// ans = 4
+// ans = 1
+// ans = 2
